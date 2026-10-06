@@ -4,19 +4,41 @@ Leads for 3D, cell-resolution datasets with per-cell instance segmentation that 
 
 Last updated: 2026-10-06.
 
-## Mouse tooth development: dataset discovery leads
+## Mouse tooth development: dataset leads (issue #1)
 
-These are relevant leads and public repository search pages, **not confirmed dataset records**. The paper below describes mouse tooth-development micro-CT, but I have not verified that its scans or segmentations are publicly downloadable. Repository search pages are included to help locate other studies; a search page alone is not evidence that it contains a suitable dataset. Promote only individual records whose files, developmental stage and access terms have been checked.
+Scope: issue #1 asks for 2D or 3D mouse tooth-development datasets that are segmented or ready to segment. This is broader than the cell-level focus of the rest of this repository, so these leads are kept apart from the main tables. Searched on 2026-10-06 in Zenodo, DataCite (covers Dryad, Figshare, FaceBase), BioStudies/BioImage Archive, IDR, MorphoSource and Europe PMC.
 
-| Lead / repository | Link | Relevance and status |
-|---|---|---|
-| Micro-CT analysis of tooth development of C57BL/6 mice strain | [Europe PMC article record (PMID 36854424)](https://europepmc.org/article/MED/36854424) | Relevant mouse tooth-development imaging study. Exact stages and availability of downloadable scans or labels remain unverified; a paper is not itself a dataset. |
-| MorphoSource | [Repository](https://www.morphosource.org/) | Search for mouse dental specimens and micro-CT media. No developmental tooth record or associated segmentation was confirmed. |
-| Zenodo | [Search: mouse tooth development](https://zenodo.org/search?q=mouse%20tooth%20development) | Search for imaging datasets and supplementary volumes; no matching record was confirmed. |
-| Dryad | [Search: mouse tooth development](https://datadryad.org/search?q=mouse%20tooth%20development) | Search for data accompanying tooth-development studies; no matching record was confirmed. |
-| Figshare | [Search: mouse tooth development](https://figshare.com/search?q=mouse%20tooth%20development) | Search for study data and supplementary image stacks; no matching record was confirmed. |
-| BioImage Archive | [Archive](https://www.ebi.ac.uk/bioimage-archive/) | Search for deposited microscopy and volumetric images; no matching tooth-development record was confirmed. |
-| EMPIAR | [Archive](https://www.ebi.ac.uk/empiar/) | Search for electron-microscopy datasets; likely more useful for cellular ultrastructure than whole-tooth morphology. No matching record was confirmed. |
+**Result: no public dataset of developing mouse teeth with segmentation labels was found.** The records below are the closest matches that were opened and read.
+
+### Images you could segment
+
+| Record | Stage / tissue | Data | Labels | License | Size | Verdict |
+|---|---|---|---|---|---|---|
+| [Raw X-ray projections and reconstructed micro-CT stacks, 7-week-old WT and Per2 KO mouse hemimandibles](https://zenodo.org/records/19871122) (Zenodo, 2026; also listed as 10.5281/zenodo.19871121) | 7-week-old mouse hemimandibles with incisor and molar (supports a study of amelogenesis) | 3D micro-CT: raw projections and reconstructed stacks for 4 WT and 4 Per2 KO samples, with acquisition parameters | None | CC-BY-4.0 | 8 zip archives, about 14.6 GB in total | Best "to segment" match. Adult mice, so it is not a developmental series |
+| [Raw data for Piper and Green, cap-to-bell molar morphogenesis, J Anat 2025](https://kcl.figshare.com/articles/dataset/Raw_data_associated_with_the_article_Piper_C_and_Green_J_B_A_b_Cap-to-bell_stage_molar_tooth_morphogenesis_occurs_through_proliferation-independent_sulcus_sharpening_and_condensation-associated_tension_in_the_dental_papilla_b_Journal_of_Ana/27733866/1) (King's College London, DOI 10.18742/27733866.v1) | Developing mouse molar, cap-to-bell stage, explants and DAPI-stained slices | 2D raw TIFFs, morphometric files, R code | Includes a StarDist model for DAPI nuclei and the resulting nuclear point clouds; no instance masks described | CC-BY-SA-4.0 | 763 MB | Only developmental-stage record found, but 2D and nuclei-level |
+| [MorphoSource, mouse molar micro-CT meshes](https://www.morphosource.org/catalog/media?locale=en&search_field=all_fields&q=mouse+molar+development) (e.g. *Mus musculus domesticus* first upper molars, data manager R. Ledevin) | Adult wild-caught specimens | Micro-CT with surface meshes, "Open Download" | None found | In Copyright (per catalogue) | 425 hits for the query; only the top results were read | Morphometrics material, not developmental; check individual records and rights before use |
+
+### Checked and not suitable
+
+| Record | Why not |
+|---|---|
+| [Multi-modal characterization of rodent dental development](https://doi.org/10.5061/dryad.9p8cz8wvn) (Dryad, CC0, 2025) | Postnatal mouse incisor and first molar (micro-CT, nanoindentation, EDS, Raman), but the deposit is only 8.8 MB, so it most likely holds measurements rather than image volumes (file list not opened). Related paper: 10.1021/acsami.5c08408 |
+| [Mapping molar shapes on signaling pathways](https://zenodo.org/records/4278031) (Zenodo, CC0, 2020) | Two CSV files of molar shape data derived from 3D surface models; no images |
+| BioStudies / BioImage Archive search | Only transcriptomics (e.g. E-MTAB-12557, E-MTAB-12544 tooth organoids) and literature records; no tooth imaging study |
+| IDR title search ("tooth", "dental") | No studies |
+
+### Paper only
+
+| Paper | Notes |
+|---|---|
+| [Micro-CT analysis of tooth development of C57BL/6 mice strain](https://europepmc.org/article/MED/36854424) (Tang et al., Chin J Stomatol 2023, DOI 10.3760/cma.j.cn112144-20220802-00433) | Micro-CT of 54 C57BL/6 mice at nine stages from P1 to P56 (n=6 per stage), the closest match to a developmental series. Not open access, in Chinese, and the abstract mentions no data deposit. Contact the authors to ask whether the scans can be shared. A paper is not a dataset |
+
+### Not yet opened
+
+- Dryad datasets on mouse molar phenotypes: [10.5061/dryad.70585](https://doi.org/10.5061/dryad.70585) (BMP7 deletion) and [10.5061/dryad.bm770](https://doi.org/10.5061/dryad.bm770) (third molar size). They may contain micro-CT or surface data.
+- FaceBase project [10.25550/9n-6d8m](https://doi.org/10.25550/9n-6d8m), amelogenin phosphorylation: the record describes developing enamel analyses, but whether image data are attached is unknown. FaceBase hosts other craniofacial micro-CT deposits worth browsing.
+- Synchrotron (ESRF) mouse molar volume, [10.13140/rg.2.2.14729.03686](https://doi.org/10.13140/rg.2.2.14729.03686), a 2010 unpublished record.
+- MorphoSource: filter by age or stage metadata to find juvenile specimens.
 
 ## Leads
 
