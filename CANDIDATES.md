@@ -4,6 +4,27 @@ Leads for 3D, cell-resolution datasets with per-cell instance segmentation that 
 
 Last updated: 2026-10-06.
 
+## Raw confocal / light-sheet with labelled cells, to segment yourself (2026-10-06)
+
+Looked for 3D fluorescence volumes where cells carry a membrane or nuclear label but no instance labels are needed. Records below were opened through the BioStudies or Zenodo API and the description read; image files themselves were not downloaded, so dimensions, channels and licences need a check before they move to the README.
+
+**Raw, to segment**
+
+| Record | Organism / tissue | Label and modality | Details | Verdict |
+|---|---|---|---|---|
+| [S-BIAD1134](https://www.ebi.ac.uk/biostudies/studies/S-BIAD1134) | Human MCF10A breast acinus | Light-sheet; H2B-miRFP703 nuclear marker (plus ERK and CDK2 reporters) | One 3D movie, 145 time points, 188x188x188 voxels at 0.29 um, Zarr. Description says nuclear marker is for segmentation and tracking | Good, small. Nuclei only |
+| [S-BIAD815](https://www.ebi.ac.uk/biostudies/studies/S-BIAD815) (OME-NGFF copy of idr0051) | Zebrafish tailbud, neuromesodermal progenitor zone | Light-sheet 4D, used for in toto cell tracking | 5 files | Good. Label channel not read |
+| [S-BIAD553](https://www.ebi.ac.uk/biostudies/studies/S-BIAD553) | Chick embryo gastrulation | Light-sheet movies of the embryo surface, membrane-GFP line, plus confocal of SNAI2 and pMLC2 | About 1,500 files | Cellular resolution, but the movies are of the surface and may be 2D projections. Check |
+
+**Possibly already segmented (check for Section A)**
+
+| Record | What it is | Verdict |
+|---|---|---|
+| [S-BSST475](https://www.ebi.ac.uk/biostudies/studies/S-BSST475) (wild type), [S-BSST497](https://www.ebi.ac.uk/biostudies/studies/S-BSST497) (*ino*, 118 ovules), [S-BSST498](https://www.ebi.ac.uk/biostudies/studies/S-BSST498) (WUSCHEL reporter, 69 ovules; z-stack plus mesh, raw cell boundaries and PlantSeg predictions), [S-BIAD957](https://www.ebi.ac.uk/biostudies/studies/S-BIAD957) (*Cardamine hirsuta*) | 3D digital cell atlases of ovule development, cellular resolution, from confocal | Atlases with per-cell data imply cell labels; confirm the segmentation files exist and are per-cell |
+| [S-BIAD2102](https://www.ebi.ac.uk/biostudies/studies/S-BIAD2102) (trout, CC BY 4.0), [S-BIAD2103](https://www.ebi.ac.uk/biostudies/studies/S-BIAD2103) (mouse) | Confocal images and masks of adipocytes in situ, 5-DTAF label | Masks are mentioned; confirm they are per-cell instances. Adult tissue |
+
+**Not tooth-specific.** No confocal or light-sheet tooth-development volume was found in BioImage Archive, Zenodo, IDR or Figshare (see the tooth section above).
+
 ## Mouse tooth development: dataset leads (issue #1)
 
 Scope: issue #1 asks for 2D or 3D mouse tooth-development datasets that are segmented or ready to segment. This is broader than the cell-level focus of the rest of this repository, so these leads are kept apart from the main tables. Searched on 2026-10-06 in Zenodo, DataCite (covers Dryad, Figshare, FaceBase), BioStudies/BioImage Archive, IDR, MorphoSource and Europe PMC.

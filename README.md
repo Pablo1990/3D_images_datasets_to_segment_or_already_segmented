@@ -44,6 +44,7 @@ Inspired by [Histopathology-Datasets](https://github.com/Pablo1990/Histopatholog
 | Dataset | Organism / tissue | Modality | Size | License | Link | Year | Notes |
 |---|---|---|---|---|---|---|---|
 | Three-Dimensional Mechanical Cooperativity Optimises Epithelial Wound Healing (S-BSST3135) | *D. melanogaster*, wing disc (wound healing) | Not stated on page | One 11.07 GB zip of source data (EMBOJ-2025-123351.zip) | CC0 | [BioStudies](https://www.ebi.ac.uk/biostudies/studies/S-BSST3135) (DOI 10.6019/S-BSST3135) | 2026 | Lim, Vicente-Munuera, Tetley, Mao. Supplied by maintainer as not segmented. |
+| LimeSeg test datasets: *Drosophila* egg chamber (`DrosophilaEggChamber.tif`) | *D. melanogaster*, egg chamber | Point-scanning confocal; ch.1 DAPI nuclei, ch.2 membranes (Nrg::GFP, Bsg::GFP) | 91 MB TIFF, voxel sizes in metadata | CC-BY-4.0 | [Zenodo 1472859](https://zenodo.org/records/1472859) | 2018 | Raw, no cell labels: segment each cell yourself. Same record also holds a vesicle confocal stack and an 8 GB HeLa FIB-SEM volume. LimeSeg paper (Machado et al.). |
 | EMPIAR Volume EM Gallery (28 volumes) | Various: HeLa, human organoid, *A. thaliana* root, *Platynereis*, zebrafish, placenta... | FIB-SEM, SBF-SEM, array tomography | 28 volumes, viewable and downloadable as OME-Zarr | Not read | [Volume EM gallery](https://beta.bioimagearchive.org/bioimage-archive/galleries/volumeem) | - | Raw volume EM across species; individual studies may have segmentations elsewhere. Not checked per volume. |
 
 ## Candidates to verify
