@@ -66,6 +66,7 @@ Unverified and borderline leads are in [CANDIDATES.md](CANDIDATES.md). Entries m
 | IDR | https://idr.openmicroscopy.org | Title searches ("segmentation", "3D", "instance") reviewed; more needed | 2026-10-06 |
 | Cell Tracking Challenge | https://celltrackingchallenge.net | 3D+time datasets and annotation policy reviewed | 2026-10-06 |
 | OSF (Arabidopsis atlas) | https://osf.io/fzr56/ | Reviewed | 2026-10-06 |
+| DataCite (all publishers), Mendeley Data, OSF, Dryad, FaceBase, eMouseAtlas (tooth image queries) | https://api.datacite.org | Reviewed for mouse tooth imaging; see CANDIDATES.md | 2026-10-06 |
 | RIKEN SSBD (tooth keyword leads) | https://ssbd.riken.jp | Three tooth projects reviewed; rest of SSBD not searched | 2026-10-06 |
 | Figshare, Dryad, OpenOrganelle, EMPIAR (segmentation entries), Allen Cell, Mendeley Data, BBBC | - | Pending | - |
 

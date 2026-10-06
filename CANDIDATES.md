@@ -76,7 +76,7 @@ Looked for 2D sections or fluorescence images of developing mouse teeth that cou
 
 **Papers that image tooth germs but state no data deposit** (author requests are the route): Ahtiainen et al. 2016 ([PMC5021093](https://pmc.ncbi.nlm.nih.gov/articles/PMC5021093/), early tooth budding, live imaging), Panousopoulou and Green 2016 ([PMC4760321](https://pmc.ncbi.nlm.nih.gov/articles/PMC4760321/), molar placode invagination; the data statement found only supplementary files at Development), and the 2016 JCB commentary "Watching a deep dive" ([PMC5021101](https://pmc.ncbi.nlm.nih.gov/articles/PMC5021101/), JCB commentary on live imaging of tooth invagination). First-author names above come from memory and were not checked against the records; supplementary movies were not verified beyond the full-text scan.
 
-**Not yet searched for 2D:** eMouseAtlas and eHistology (annotated mouse embryo section atlases that include tooth stages), GUDMAP, Allen Developing Mouse Brain (not tooth), Mendeley Data, OSF.
+**Section atlases (checked 2026-10-06):** [eMouseAtlas (EMAP)](https://www.emouseatlas.org/emap/ema/home.php) offers downloadable 3D reconstructions built from serial histological sections of whole mouse embryos for Theiler stages TS07 to TS26 (`.wlz` files, opened with JAtlasViewer; [downloads index](https://www.emouseatlas.org/emap/ema/theiler_stages/downloads/downloads.html)), and the [eHistology atlas](https://www.emouseatlas.org/emap/eHistology/kaufman/index.php) (Kaufman supplement) has annotated whole-embryo sections. Site content is CC BY 3.0 unless noted. These are whole-embryo images, so tooth germs are a few small structures in each section; whether cells are resolvable was not checked, and which stages show tooth buds, caps and bells was not looked up. GUDMAP and Allen atlases were not searched (kidney and brain focus).
 
 ### Sweep of a second lead list and wider repository search (2026-10-06)
 
@@ -99,6 +99,22 @@ Every link in a lead list supplied by the maintainer was checked from record pag
 | Dryad [mgqnk98zf](https://doi.org/10.5061/dryad.mgqnk98zf), [12jm63xvn](https://doi.org/10.5061/dryad.12jm63xvn), [1g1jwsvc5](https://doi.org/10.5061/dryad.1g1jwsvc5) | ToothMaker simulations (4.8 GB), molar-shape CSVs, jaw RNA-seq FASTQ | Rejected: not images |
 | FaceBase [B5-9848](https://doi.org/10.25550/b5-9848), [1-SXC4](https://doi.org/10.25550/1-sxc4), [1-77A8](https://doi.org/10.25550/1-77a8) | Adult incisor micro-CT; PN7-PN21 molar root micro-CT and H&E figures; published figure | Not early development; 1-SXC4 is a micro-CT plus histology overview that could be a 2D source for postnatal roots |
 | Journal Figshare and SAGE collections (Usag-1/Bmp7, FAM20B, Msx1, Wnt10a, Cdc42 and others) | Supplementary figures attached to papers | Not datasets: single figure files |
+
+### Second sweep on the task list (2026-10-06)
+
+Seven tasks were run; every search was metadata only.
+
+| Task | Result |
+|---|---|
+| Mendeley Data and OSF | Mendeley: only human embryonic tooth germ scRNA-seq and spatial data ([7ryrp25y6z](https://doi.org/10.17632/7ryrp25y6z), [mg3pw5mmd8](https://doi.org/10.17632/mg3pw5mmd8), [v3wgx8pm5y](https://doi.org/10.17632/v3wgx8pm5y)). OSF: only dentistry review protocols. The OSF title search for "tooth" and "molar" timed out, so it is not exhaustive. |
+| Harvard Dataverse, Finnish and Japanese repositories | Dataverse DOIs (10.7910) returned nothing on tooth development through DataCite. Fairdata (Helsinki) and Japanese repositories are not indexed that way and were not searched directly. A DataCite search across all publishers found no further tooth image repositories beyond FaceBase, Zenodo, Dryad, Figshare, KCL and SSBD. |
+| Section atlases | EMAP and eHistology (above). |
+| Lab outputs (56 open-access papers from Jernvall, Tsuji, Morita, Green, Thesleff, Mikkola, Sharpe, Klein, Hu, Adameyko, Matalova and others) | No image deposits except the SSBD records already listed. One method paper is worth contacting the authors about, see below. |
+| Europe PMC, wider screen (90 open-access mouse tooth imaging papers) | Only repository links already known; no new image data. |
+| SSBD, IDR, BioImage Archive again | SSBD: 280 projects listed, only 98 and 100 are tooth image data. IDR: no tooth or jaw project except idr0144 (human jawbone histology). BioImage Archive: no tooth, jaw or organ-culture study. Cell Image Library was not searched. |
+| Dryad loose ends | Closed above. |
+
+**Best lead without public images: MORPHOVIEW** (Dev Dyn 2026, [10.1002/dvdy.70061](https://doi.org/10.1002/dvdy.70061), [PMC12818342](https://pmc.ncbi.nlm.nih.gov/articles/PMC12818342/)). It images mouse mandibular incisor tooth buds as 3D confocal volumes, with membrane-targeted fluorescent proteins and phalloidin, then segments individual cells with Cellpose; it also works on catshark and *Xenopus*. Code, MATLAB files and a Cellpose model (trained on shark tissue) are at [github.com/snoreis/MORPHOVIEW](https://github.com/snoreis/MORPHOVIEW) (BSD-3-Clause, about 24 MB). The paper's data statement does not name a repository for the image volumes, so this is a lead for asking the corresponding authors, not a dataset.
 
 ### Images you could segment
 
@@ -141,7 +157,7 @@ Note: FaceBase pages carried the banner "This repository is under review for pot
 
 ### Not yet opened
 
-- Dryad datasets on mouse molar phenotypes: [10.5061/dryad.70585](https://doi.org/10.5061/dryad.70585) (BMP7 deletion, [PMC5792877](https://pmc.ncbi.nlm.nih.gov/articles/PMC5792877/)), [10.5061/dryad.bm770](https://doi.org/10.5061/dryad.bm770) (third molar size), [10.5061/dryad.bt848](https://doi.org/10.5061/dryad.bt848) (first upper molar shape, [PMC5679752](https://pmc.ncbi.nlm.nih.gov/articles/PMC5679752/)) and [10.5061/dryad.f4qrfj6sn](https://doi.org/10.5061/dryad.f4qrfj6sn) (aging mice, [PMC7220376](https://pmc.ncbi.nlm.nih.gov/articles/PMC7220376/)). They are named in the papers' data statements but their contents were not opened.
+- Dryad datasets on mouse molar phenotypes (all four opened 2026-10-06, none are images): [10.5061/dryad.70585](https://doi.org/10.5061/dryad.70585) (BMP7 deletion: landmark files and 3D .ply meshes of adult molars, 37 MB), [10.5061/dryad.bm770](https://doi.org/10.5061/dryad.bm770) (third-molar size: one R data file), [10.5061/dryad.bt848](https://doi.org/10.5061/dryad.bt848) (craniofacial shape GWAS in a mouse hybrid zone: genotype and phenotype tables; this is not the molar-shape record an earlier note described) and [10.5061/dryad.f4qrfj6sn](https://doi.org/10.5061/dryad.f4qrfj6sn) (aging mice oral microbiome tables).
 - FaceBase project [10.25550/9n-6d8m](https://doi.org/10.25550/9n-6d8m), amelogenin phosphorylation: the record describes developing enamel analyses, but whether image data are attached is unknown. A FaceBase search for micro-CT returns about 700 records (many are zebrafish); only the tooth-related ones were triaged above.
 - Synchrotron (ESRF) mouse molar volume, [10.13140/rg.2.2.14729.03686](https://doi.org/10.13140/rg.2.2.14729.03686), a 2010 unpublished record.
 - MorphoSource: filter by age or stage metadata to find juvenile specimens.
