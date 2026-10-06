@@ -4,6 +4,20 @@ Leads for 3D, cell-resolution datasets with per-cell instance segmentation that 
 
 Last updated: 2026-10-06.
 
+## Mouse tooth development: dataset discovery leads
+
+These are relevant leads and public repository search pages, **not confirmed dataset records**. The paper below describes mouse tooth-development micro-CT, but I have not verified that its scans or segmentations are publicly downloadable. Repository search pages are included to help locate other studies; a search page alone is not evidence that it contains a suitable dataset. Promote only individual records whose files, developmental stage and access terms have been checked.
+
+| Lead / repository | Link | Relevance and status |
+|---|---|---|
+| Micro-CT analysis of tooth development of C57BL/6 mice strain | [Europe PMC article record (PMID 36854424)](https://europepmc.org/article/MED/36854424) | Relevant mouse tooth-development imaging study. Exact stages and availability of downloadable scans or labels remain unverified; a paper is not itself a dataset. |
+| MorphoSource | [Repository](https://www.morphosource.org/) | Search for mouse dental specimens and micro-CT media. No developmental tooth record or associated segmentation was confirmed. |
+| Zenodo | [Search: mouse tooth development](https://zenodo.org/search?q=mouse%20tooth%20development) | Search for imaging datasets and supplementary volumes; no matching record was confirmed. |
+| Dryad | [Search: mouse tooth development](https://datadryad.org/search?q=mouse%20tooth%20development) | Search for data accompanying tooth-development studies; no matching record was confirmed. |
+| Figshare | [Search: mouse tooth development](https://figshare.com/search?q=mouse%20tooth%20development) | Search for study data and supplementary image stacks; no matching record was confirmed. |
+| BioImage Archive | [Archive](https://www.ebi.ac.uk/bioimage-archive/) | Search for deposited microscopy and volumetric images; no matching tooth-development record was confirmed. |
+| EMPIAR | [Archive](https://www.ebi.ac.uk/empiar/) | Search for electron-microscopy datasets; likely more useful for cellular ultrastructure than whole-tooth morphology. No matching record was confirmed. |
+
 ## Leads
 
 | Candidate | Source / link | What we know | Open question |
