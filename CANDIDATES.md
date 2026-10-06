@@ -78,6 +78,28 @@ Looked for 2D sections or fluorescence images of developing mouse teeth that cou
 
 **Not yet searched for 2D:** eMouseAtlas and eHistology (annotated mouse embryo section atlases that include tooth stages), GUDMAP, Allen Developing Mouse Brain (not tooth), Mendeley Data, OSF.
 
+### Sweep of a second lead list and wider repository search (2026-10-06)
+
+Every link in a lead list supplied by the maintainer was checked from record pages or APIs, then DataCite, Dryad, Zenodo and SSBD were swept again for tooth image deposits. Nothing was downloaded. Only the three SSBD records above qualify as mouse tooth-germ confocal data.
+
+| Lead | What it is | Verdict |
+|---|---|---|
+| SSBD [100](https://ssbd.riken.jp/repository/ssbd-repos-000100/), [98](https://ssbd.riken.jp/repository/ssbd-repos-000098/) | Mouse tooth germ time-lapse confocal | **Qualify** (see above) |
+| SSBD [101](https://ssbd.riken.jp/repository/ssbd-repos-000101/) | SEM of mouse bio-hybrid implant tooth, 8 MB | Rejected: 2D SEM, not development |
+| SSBD [105](https://ssbd.riken.jp/repository/ssbd-repos-000105/) | Canine CT, 333 KB | Rejected: dog, tiny |
+| SSBD 318 | Yamamoto stem-cell project | Not tooth |
+| Zenodo [8250595](https://zenodo.org/records/8250595) = Dryad [qnk98sfkk](https://doi.org/10.5061/dryad.qnk98sfkk) | RNAscope of human fetal tooth germ (22 files, 6.6 GB, CC0) | Rejected: human, 2D. Useful only if you also want human sections |
+| Zenodo [17185791](https://zenodo.org/records/17185791) | Confocal of human dentin porosity | Rejected: human dentin, not development |
+| Zenodo [11392406](https://zenodo.org/records/11392406), [10597292](https://zenodo.org/records/10597292), [8027553](https://zenodo.org/records/8027553); NKUT, STS-3D-Tooth, 3DTeethSegX, DentalDS | Clinical CBCT, X-ray and intraoral scans | Rejected: human clinical, not cellular |
+| Mendeley [v3wgx8pm5y](https://data.mendeley.com/datasets/v3wgx8pm5y/1) | Human embryonic tooth germ scRNA-seq and spatial transcriptomics (two RData files) | Rejected: human, no images |
+| GEO GSE53903, GSE162413, GSE255946, GSE320526, GSE221110 and ENA PRJNA681820, SRP058506, PRJNA643853, PRJNA274271, PRJNA480017, PRJNA595154, ERP144120 | Mouse (and cat, gecko) tooth RNA-seq or arrays | Rejected: sequencing. GSE79990, GSE189381 and GDS4453 were not read (rate limit) but are expression records by type |
+| CellSeg3D, NIS3D, BioImage Archive, "NIH Dataset Catalog" | Generic tools or portals | Not tooth data; BioImage Archive searched earlier |
+| UNSW Embryology, HEAL (Utah), histology-world, anatomicum, Sciencephoto, Alamy | Teaching figures and stock photos | Rejected: single illustrated images, rights unclear, no sections to stack |
+| Papers: Coupling of angiogenesis and odontogenesis ([PMC8952600](https://pmc.ncbi.nlm.nih.gov/articles/PMC8952600/)), initiation knot ([PMC8126415](https://pmc.ncbi.nlm.nih.gov/articles/PMC8126415/)), peroxisomal dysfunction ([PMC11627416](https://pmc.ncbi.nlm.nih.gov/articles/PMC11627416/)), incisor niche actomyosin ([PMC12855154](https://pmc.ncbi.nlm.nih.gov/articles/PMC12855154/)), podoplanin ([PMC5319687](https://pmc.ncbi.nlm.nih.gov/articles/PMC5319687/)) | Mouse tooth imaging papers | No image deposit; the incisor paper points only to GEO GSE299463. Author requests only |
+| Dryad [mgqnk98zf](https://doi.org/10.5061/dryad.mgqnk98zf), [12jm63xvn](https://doi.org/10.5061/dryad.12jm63xvn), [1g1jwsvc5](https://doi.org/10.5061/dryad.1g1jwsvc5) | ToothMaker simulations (4.8 GB), molar-shape CSVs, jaw RNA-seq FASTQ | Rejected: not images |
+| FaceBase [B5-9848](https://doi.org/10.25550/b5-9848), [1-SXC4](https://doi.org/10.25550/1-sxc4), [1-77A8](https://doi.org/10.25550/1-77a8) | Adult incisor micro-CT; PN7-PN21 molar root micro-CT and H&E figures; published figure | Not early development; 1-SXC4 is a micro-CT plus histology overview that could be a 2D source for postnatal roots |
+| Journal Figshare and SAGE collections (Usag-1/Bmp7, FAM20B, Msx1, Wnt10a, Cdc42 and others) | Supplementary figures attached to papers | Not datasets: single figure files |
+
 ### Images you could segment
 
 | Record | Stage / tissue | Data | Labels | License | Size | Verdict |
