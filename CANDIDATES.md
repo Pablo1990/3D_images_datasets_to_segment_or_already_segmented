@@ -31,6 +31,28 @@ Scope: issue #1 asks for 2D or 3D mouse tooth-development datasets that are segm
 
 **Result: no public dataset of developing mouse teeth with segmentation labels was found.** There is, however, one open developmental micro-CT series ready to segment (FaceBase, E10 to P32). The records below are the closest matches that were opened and read.
 
+### Published 3D confocal datasets of mouse tooth germs to segment
+
+**None found (2026-10-06).** No public confocal or light-sheet volume of a mouse tooth germ (bud, cap, bell stage; molar or incisor), raw or segmented, turned up. Searched from record pages and API descriptions only, nothing downloaded:
+
+| Source | Queries | Result |
+|---|---|---|
+| BioImage Archive / BioStudies | tooth, molar, incisor, tooth germ, dental epithelium, dental mesenchyme, odontogenesis, enamel knot, cleared jaw light-sheet, craniofacial light-sheet | No tooth-development study. Only S-BIAD2846 (Bmp2/Bmp7, periodontal injury, adult), not opened |
+| Zenodo | tooth/molar/incisor/tooth germ with confocal, light-sheet, z-stack, segmentation, live imaging, explant | Fossil papers and clinical CT only |
+| IDR | project and screen names and descriptions | idr0144 is bright-field histology of human jaw bone |
+| Figshare | tooth development confocal, molar light-sheet, tooth germ 3D, incisor confocal, dental epithelium live imaging | Nearest is [Marin-Riera et al. 2018](https://doi.org/10.1371/journal.pcbi.1005981) (tooth explants, CC BY 4.0): supplementary PNGs, PDFs and one movie, no volumes |
+| Europe PMC full-text screen | 39 open-access mouse tooth papers naming a repository | Deposits are micro-CT (FaceBase), sequencing, or measurements; no confocal stacks |
+
+Closest options (none is a confocal tooth germ):
+
+| Record | Why it is close | Gap |
+|---|---|---|
+| [FaceBase 1-YBZ6](https://doi.org/10.25550/1-YBZ6) | Mouse E10-P32 molar development, 3D, open | Synchrotron micro-CT at about 8.8 um voxels, not cellular, not confocal |
+| [Zenodo 1472859](https://zenodo.org/records/1472859) | Raw confocal, nuclei + membrane channels, epithelium, CC-BY-4.0 | *Drosophila* egg chamber, not a tooth |
+| [S-BIAD1134](https://www.ebi.ac.uk/biostudies/studies/S-BIAD1134) | Light-sheet 3D, nuclear marker, small | Human breast acinus |
+
+If you need real tooth-germ confocal data, the usual route is to ask the authors of papers that image tooth germs by confocal or light-sheet but do not deposit the stacks.
+
 ### Images you could segment
 
 | Record | Stage / tissue | Data | Labels | License | Size | Verdict |
