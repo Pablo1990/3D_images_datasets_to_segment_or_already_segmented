@@ -53,6 +53,21 @@ Closest options (none is a confocal tooth germ):
 
 If you need real tooth-germ confocal data, the usual route is to ask the authors of papers that image tooth germs by confocal or light-sheet but do not deposit the stacks.
 
+### 2D images of mouse tooth development, to reconstruct in 3D (2026-10-06)
+
+Looked for 2D sections or fluorescence images of developing mouse teeth that could be aligned and stacked. Record descriptions only; no image files were downloaded, so image counts, section spacing and whether the sections are serial are unconfirmed.
+
+| Record | Stage / tissue | Images | License | Size | Verdict |
+|---|---|---|---|---|---|
+| [KCL Figshare 10.18742/27733866.v1](https://doi.org/10.18742/27733866.v1) (Piper and Green, J Anat 2025, "Cap-to-bell stage molar tooth morphogenesis...") | Mouse molar explants, cap to bell stage | Raw .tif images behind the figures, including DAPI-stained molar slices; plus a StarDist nucleus-segmentation model, point-cloud nuclear positions, .morphoj measurements and R code | CC BY-SA 4.0 | 763 MB | **Best 2D lead.** Slices are probably single sections per sample, not a serial stack. Check before planning a reconstruction |
+| [FaceBase 64-D500](https://doi.org/10.25550/64-d500) | E14.5 *Lhx6*-/- mutant mouse, molar tooth root, 3 embryos | Fluorescence microscopy | Not stated on record | Not stated | Real 2D tooth images, but the description is one line; imaging details and file list not read |
+
+**Checked, not images:** FaceBase [2P-K8WE](https://doi.org/10.25550/2p-k8we) and [2T-8JMG](https://doi.org/10.25550/2t-8jmg) (E14 vestibular lamina and incisor tooth germ, bulk RNA-seq), Zenodo [19343165](https://zenodo.org/records/19343165) (dentinogenesis in human cells and adult mouse molar figures, not development), Figshare [5925484](https://doi.org/10.1371/journal.pcbi.1005981) (Marin-Riera et al. 2018 explant study: supplementary figure PNGs and one movie).
+
+**Papers that image tooth germs but state no data deposit** (author requests are the route): Ahtiainen et al. 2016 ([PMC5021093](https://pmc.ncbi.nlm.nih.gov/articles/PMC5021093/), early tooth budding, live imaging), Panousopoulou and Green 2016 ([PMC4760321](https://pmc.ncbi.nlm.nih.gov/articles/PMC4760321/), molar placode invagination; the data statement found only supplementary files at Development), and Marangoni et al. ([PMC5021101](https://pmc.ncbi.nlm.nih.gov/articles/PMC5021101/), JCB commentary on live imaging of tooth invagination). Authors, journal and any supplementary movies were not verified beyond the full-text scan.
+
+**Not yet searched for 2D:** eMouseAtlas and eHistology (annotated mouse embryo section atlases that include tooth stages), GUDMAP, Allen Developing Mouse Brain (not tooth), Mendeley Data, OSF.
+
 ### Images you could segment
 
 | Record | Stage / tissue | Data | Labels | License | Size | Verdict |
