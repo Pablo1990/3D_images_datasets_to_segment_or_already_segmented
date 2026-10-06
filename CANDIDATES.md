@@ -33,7 +33,17 @@ Scope: issue #1 asks for 2D or 3D mouse tooth-development datasets that are segm
 
 ### Published 3D confocal datasets of mouse tooth germs to segment
 
-**None found (2026-10-06).** No public confocal or light-sheet volume of a mouse tooth germ (bud, cap, bell stage; molar or incisor), raw or segmented, turned up. Searched from record pages and API descriptions only, nothing downloaded:
+**Found, after an earlier miss (2026-10-06).** My first pass through BioImage Archive, Zenodo, IDR, Figshare and Europe PMC found nothing. A lead list from another source then pointed to RIKEN SSBD, which none of those searches cover, and it holds real time-lapse confocal volumes of mouse tooth germs (table below, now also in the README). All are raw: no cell labels. Record pages only, nothing downloaded.
+
+| Record | Content | Imaging | License | Size | Verdict |
+|---|---|---|---|---|---|
+| [SSBD dataset 4348](https://ssbd.riken.jp/database/dataset/4348/) (`fig2a_split_toothgerm`, project [ssbd-repos-000100](https://ssbd.riken.jp/repository/ssbd-repos-000100/), Yamamoto et al. 2015, [10.1038/srep18393](https://doi.org/10.1038/srep18393)) | Early stage of a split tooth germ, transgenic mouse embryo, time-lapse | Zeiss LSM780 laser-scanning confocal, fluorescence; XY 0.55 um/px, Z 1.82 um/slice, 45 min per frame | CC BY | 49.7 GB (zip 24.1 GB) | **Best match.** Which fluorescent reporter labels the cells is not on the record; see the paper |
+| [SSBD dataset 4349](https://ssbd.riken.jp/database/dataset/4349/) (`fig2b_enamelknot`, same project) | Late stage of the same split tooth germ | Same settings | CC BY | 80.7 GB (zip 45.9 GB) | Same caveat |
+| [SSBD ssbd-repos-000098](https://ssbd.riken.jp/repository/ssbd-repos-000098/) (Morita et al. 2016, [10.1371/journal.pone.0161336](https://doi.org/10.1371/journal.pone.0161336)) | Time-lapse confocal of tooth epithelium deformation, with BDML quantitative data (cell trajectories) | Confocal time-lapse | CC BY 4.0 | 12.4 GB | Good; smaller. Trajectories give cell positions, not shapes |
+
+SSBD project 100 also lists micro-CT of the split tooth and of eruption (small zips, 65-80 KB). Lead-list items rejected after checking: Zenodo 8250595 and Dryad qnk98sfkk (same record: RNAscope of *human* fetal tooth germ), Mendeley v3wgx8pm5y (human scRNA-seq and spatial transcriptomics), Zenodo 17185791 (human dentin), 11392406, 10597292 and 8027553 (clinical dental scans), SSBD 105 (dog CT). The GEO and ENA accessions in that list are sequencing records and were not opened.
+
+Earlier searches, kept for the record:
 
 | Source | Queries | Result |
 |---|---|---|
@@ -51,7 +61,7 @@ Closest options (none is a confocal tooth germ):
 | [Zenodo 1472859](https://zenodo.org/records/1472859) | Raw confocal, nuclei + membrane channels, epithelium, CC-BY-4.0 | *Drosophila* egg chamber, not a tooth |
 | [S-BIAD1134](https://www.ebi.ac.uk/biostudies/studies/S-BIAD1134) | Light-sheet 3D, nuclear marker, small | Human breast acinus |
 
-If you need real tooth-germ confocal data, the usual route is to ask the authors of papers that image tooth germs by confocal or light-sheet but do not deposit the stacks.
+Other papers that image tooth germs by confocal but state no deposit are listed in the 2D section below; authors are the route for those.
 
 ### 2D images of mouse tooth development, to reconstruct in 3D (2026-10-06)
 

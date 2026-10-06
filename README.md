@@ -45,6 +45,9 @@ Inspired by [Histopathology-Datasets](https://github.com/Pablo1990/Histopatholog
 |---|---|---|---|---|---|---|---|
 | Three-Dimensional Mechanical Cooperativity Optimises Epithelial Wound Healing (S-BSST3135) | *D. melanogaster*, wing disc (wound healing) | Not stated on page | One 11.07 GB zip of source data (EMBOJ-2025-123351.zip) | CC0 | [BioStudies](https://www.ebi.ac.uk/biostudies/studies/S-BSST3135) (DOI 10.6019/S-BSST3135) | 2026 | Lim, Vicente-Munuera, Tetley, Mao. Supplied by maintainer as not segmented. |
 | LimeSeg test datasets: *Drosophila* egg chamber (`DrosophilaEggChamber.tif`) | *D. melanogaster*, egg chamber | Point-scanning confocal; ch.1 DAPI nuclei, ch.2 membranes (Nrg::GFP, Bsg::GFP) | 91 MB TIFF, voxel sizes in metadata | CC-BY-4.0 | [Zenodo 1472859](https://zenodo.org/records/1472859) | 2018 | Raw, no cell labels: segment each cell yourself. Same record also holds a vesicle confocal stack and an 8 GB HeLa FIB-SEM volume. LimeSeg paper (Machado et al.). |
+| Time-lapse confocal of a split tooth germ, early stage (SSBD 4348, project ssbd-repos-000100) | *M. musculus*, embryonic tooth germ (transgenic) | Laser-scanning confocal (Zeiss LSM780), time-lapse, 45 min/frame; XY 0.55 um/px, Z 1.82 um | 49.7 GB (24.1 GB zip) | CC BY | [SSBD](https://ssbd.riken.jp/database/dataset/4348/) | 2015 (released 2019) | Yamamoto, Oshima, Tsuji et al., [Sci Rep 2015](https://doi.org/10.1038/srep18393). Raw, no cell labels. Reporter not stated on the record. |
+| Time-lapse confocal of a split tooth germ, late stage (SSBD 4349, same project) | *M. musculus*, embryonic tooth germ (transgenic) | Same as above | 80.7 GB (45.9 GB zip) | CC BY | [SSBD](https://ssbd.riken.jp/database/dataset/4349/) | 2015 (released 2019) | Same paper. Raw, no cell labels. |
+| Epithelial tissue deformation in tooth development (SSBD ssbd-repos-000098) | *M. musculus*, tooth epithelium | Time-lapse confocal, plus BDML quantitative cell-trajectory data | 12.4 GB | CC BY 4.0 | [SSBD](https://ssbd.riken.jp/repository/ssbd-repos-000098/) | 2016 (released 2019) | Morita, Tsuji et al., [PLoS ONE 2016](https://doi.org/10.1371/journal.pone.0161336). Raw images plus trajectories, not shape labels. |
 | EMPIAR Volume EM Gallery (28 volumes) | Various: HeLa, human organoid, *A. thaliana* root, *Platynereis*, zebrafish, placenta... | FIB-SEM, SBF-SEM, array tomography | 28 volumes, viewable and downloadable as OME-Zarr | Not read | [Volume EM gallery](https://beta.bioimagearchive.org/bioimage-archive/galleries/volumeem) | - | Raw volume EM across species; individual studies may have segmentations elsewhere. Not checked per volume. |
 
 ## Candidates to verify
@@ -63,6 +66,7 @@ Unverified and borderline leads are in [CANDIDATES.md](CANDIDATES.md). Entries m
 | IDR | https://idr.openmicroscopy.org | Title searches ("segmentation", "3D", "instance") reviewed; more needed | 2026-10-06 |
 | Cell Tracking Challenge | https://celltrackingchallenge.net | 3D+time datasets and annotation policy reviewed | 2026-10-06 |
 | OSF (Arabidopsis atlas) | https://osf.io/fzr56/ | Reviewed | 2026-10-06 |
+| RIKEN SSBD (tooth keyword leads) | https://ssbd.riken.jp | Three tooth projects reviewed; rest of SSBD not searched | 2026-10-06 |
 | Figshare, Dryad, OpenOrganelle, EMPIAR (segmentation entries), Allen Cell, Mendeley Data, BBBC | - | Pending | - |
 
 ## Table field definitions
