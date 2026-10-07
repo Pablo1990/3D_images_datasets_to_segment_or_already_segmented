@@ -38,6 +38,10 @@ Inspired by [Histopathology-Datasets](https://github.com/Pablo1990/Histopatholog
 | 3D nuclei instance segmentation, *C. elegans* L1 | *C. elegans*, L1 larvae | Confocal (Leica, 63x) | Nuclei | Original annotations from Long et al. 2009, manually curated by Kainmueller | 28 volumes with masks, avg ~1050x140x140 voxels, 84.4 MB | CC-BY-4.0 | [Zenodo 5942575](https://zenodo.org/records/5942575) | 2022 | Long, Peng, Liu, Kim, Myers, Kainmueller, Weigert. Train/val/test split provided. |
 | 2D and 3D instance segmentation of nuclei from volume EM (S-BIAD2822) | *H. sapiens*, *M. musculus* | FIB-SEM, SEM | Nuclei | Model (NucleoNet) predictions + expert proofreading in empanada-napari; 3D from orthogonal 2D inference + voting, proofread | 24 files, 1.95 GB | CC0 | [BioImage Archive](https://beta.bioimagearchive.org/bioimage-archive/galleries/ai/ai-ready-study/S-BIAD2822) | 2026 | Narayan (NCI/NIH). |
 | Cell Tracking Challenge: 3D+time simulated sets (Fluo-C3DH-A549-SIM, Fluo-N3DH-SIM+) | Simulated A549 cells; simulated HL60 nuclei | Simulated fluorescence | Whole cell / nuclei | Exact computer-generated masks for all cells (absolute truth) | 314 MB and 3.1 GB training sets | Not stated on pages read | [CTC 3D datasets](https://celltrackingchallenge.net/3d-datasets/), [annotations](https://celltrackingchallenge.net/annotations/) | - | **Synthetic.** The real 3D+time sets (e.g. Fluo-N3DH-CE, Fluo-N3DL-DRO) have only partial gold segmentation truth and silver truth for some; they are not listed here. Masks are tracked over time. |
+| 3D epithelial cell topology in *Drosophila* wing discs (S-BIAD3120) | *D. melanogaster*, 3rd instar wing discs (control and Mbs-RNAi) | Two-photon, membrane marker | Whole cell | Not stated on record page; see paper | 12 files (6 volumes + 6 `_labels.tif` masks), 214 MB | CC0 | [BioStudies](https://www.ebi.ac.uk/biostudies/studies/S-BIAD3120) | 2026 | Paci, Berkemeier, Baum, Page, Mao. Record keywords: instance segmentation, 3D. Paper: PNAS 2026 (title "3D epithelial cell topology tunes signalling range to promote precise patterning"). |
+| Mouse intestinal organoid, light-sheet, reference OME-Zarr with nuclei tracking (Zenodo 22078388) | *M. musculus*, intestinal organoid (single movie) | Light-sheet 3D time-lapse; membrane (mem9) and nuclear (H2B) channels; z 2.0 um, xy 0.26 um | Nuclei and whole cell (plus semantic lumen/epithelium) | Not stated on record page; see "Multiscale light-sheet organoid imaging framework" | Seven zips from 242 MB (mini) to 39.8 GB (full), OME-Zarr v0.5 | CC-BY-4.0 | [Zenodo 22078388](https://zenodo.org/records/22078388) | 2026 | Hess, Caton, Kothari, Swedlow. Labels are instance segmentations of nuclei and cells per timepoint, but sparse (only cells in the tracking solution; ~350 late in the movie). Nucleus IDs are not tracked across time (lineage tree supplied). Related lead: Zenodo 6828906 in CANDIDATES.md. |
+| SBF-SEM volume of gold-nanoparticle-loaded FaDu tumour spheroid with segmentation (S-BIAD3263) | *H. sapiens*, FaDu head-and-neck carcinoma spheroid | SBF-SEM, 10x10x50 nm voxels, ~102x102x35 um | Whole cell, nuclei (and AuNPs) | Fine-tuned Cellpose-SAM predictions; manual ground truth for cells and nuclei on 20 slices at two resolutions | OME-NGFF zarr archive plus ground-truth TIFFs; the first 25 listed files total ~67 GB (121 file records) | CC0 | [BioStudies](https://www.ebi.ac.uk/biostudies/studies/S-BIAD3263) | 2026 | Bottone, Gerken, Habermann, Mateos, Lucas, Riemann et al. Whole-volume masks are model-predicted; only 20 slices are manual. |
+| Early gastrulation in *C. elegans*: raw confocal and segmented 3D cell meshes (Zenodo 19795530) | *C. elegans*, early embryo | Confocal (raw stacks in `/microscopy`) | Whole cell (per-cell 3D surface meshes, VTP) | Not stated on record page; see paper | One 17.2 GB zip (contents list not opened) | CC-BY-4.0 | [Zenodo 19795530](https://zenodo.org/records/19795530) | 2026 | Thiels, Jelier, Vanslambrouck, Xiao et al. Segmentations are meshes in `/segmentations`, not label images; the record also holds per-cell volumes, contact areas and curvatures. Paper: "Integrated quantitative imaging and biomechanical modeling of early gastrulation in C. elegans". |
 
 ## B. 3D datasets without segmentation (raw only)
 
@@ -58,11 +62,13 @@ Unverified and borderline leads are in [CANDIDATES.md](CANDIDATES.md). Entries m
 
 | Source | URL | Status | Last checked |
 |---|---|---|---|
+| BioStudies / BioImages collection, newest-first search "3D AND (segmentation OR labels)" (140 hits; 40 newest read) | https://www.ebi.ac.uk/biostudies/api/v1/BioImages/search | Reviewed; 5 records opened | 2026-10-07 |
+| Europe PMC, mouse tooth + confocal/light-sheet/3D, last ~3 weeks (119 hits) and tooth preprints (5) | https://europepmc.org | Titles screened; nothing with deposited tooth images | 2026-10-07 |
 | BioImage Archive, AI-ready studies gallery (13 studies) | https://beta.bioimagearchive.org/bioimage-archive/galleries/ai/ai-ready-studies | Fully reviewed | 2026-10-06 |
 | BioImage Archive, Volume EM gallery | https://beta.bioimagearchive.org/bioimage-archive/galleries/volumeem | Listing reviewed | 2026-10-06 |
 | BioStudies S-BSST3135 | https://www.ebi.ac.uk/biostudies/studies/S-BSST3135 | Reviewed | 2026-10-06 |
 | bioimage.io datasets | https://bioimage.io/#/datasets | Reviewed (46 datasets in the public collection index) | 2026-10-06 |
-| Zenodo | https://zenodo.org | Two keyword searches reviewed; more needed | 2026-10-06 |
+| Zenodo | https://zenodo.org | REST API, newest-first segmentation / 3D / organoid / tooth queries (2026-10-07); more needed | 2026-10-07 |
 | IDR | https://idr.openmicroscopy.org | Title searches ("segmentation", "3D", "instance") reviewed; more needed | 2026-10-06 |
 | Cell Tracking Challenge | https://celltrackingchallenge.net | 3D+time datasets and annotation policy reviewed | 2026-10-06 |
 | OSF (Arabidopsis atlas) | https://osf.io/fzr56/ | Reviewed | 2026-10-06 |
@@ -93,6 +99,7 @@ Open a pull request or issue with a new row, filling in as many fields as possib
 
 | Date | Change |
 |---|---|
+| 2026-10-07 | Added 4 verified entries to Section A: S-BIAD3120, Zenodo 22078388, S-BIAD3263, Zenodo 19795530. No new qualifying tooth datasets (Europe PMC / Zenodo checked). Sources: Zenodo REST (newest-first), BioStudies BioImages search, Europe PMC. IDR, SSBD, Figshare, Dryad not re-searched this run. |
 | 2026-10-06 | README structure created. Added 9 verified datasets/collections (Section A), 2 raw-only entries (Section B). Candidates tracked in CANDIDATES.md. |
 
 ## Author

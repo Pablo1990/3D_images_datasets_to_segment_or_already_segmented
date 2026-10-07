@@ -2,7 +2,25 @@
 
 Leads for 3D, cell-resolution datasets with per-cell instance segmentation that are **not yet confirmed** (labels not located, nuclei/neurite-only, derived data, or only seen in a catalogue). When verified, move the entry to [README.md](README.md); if rejected, move it to the rejected list below with the reason.
 
-Last updated: 2026-10-06.
+Last updated: 2026-10-07.
+
+## Daily run 2026-10-07: leads from Zenodo and BioStudies (record pages / API descriptions read, nothing downloaded)
+
+| Record | What it is | Verdict |
+|---|---|---|
+| [Zenodo 18711581](https://zenodo.org/records/18711581) (Sablowski, Yates; CC-BY-4.0; 2026-02-20; ~44.7 GB) | 3D confocal (Airyscan) stacks of *Arabidopsis* inflorescence apices, processed with Python scripts that segment cells and then manually corrected | Likely Section A. The zips (named "...Airyscan Processing.zip") were not opened, so whether per-cell label images are included is unconfirmed |
+| [S-BIAD3984](https://www.ebi.ac.uk/biostudies/studies/S-BIAD3984) (Marques thesis, CC0; 2026-09-30) | Whole-mount larval zebrafish brain, Airyscan confocal; description says 3D Cellpose nuclear masks for ~50,000 neurons per hemisphere | The 21 listed files (~243 GB) all look like image TIFFs; no mask files identified. Nuclei only. Not confirmed |
+| [Zenodo 22760592](https://zenodo.org/records/22760592) (Dye, Popovic; CC-BY-4.0; 2026-09-15) | *Drosophila* wing disc ex vivo E-cadherin-GFP spinning-disc z-stack time-lapse, cell boundary segmentation and tracking (TissueMiner database) | Segmentation of the apical junction layer is probably 2D; the description does not say. Not confirmed 3D |
+| [Zenodo 17278246](https://zenodo.org/records/17278246) (Schmeisser; CC-BY-4.0; 7.7 GB) | Benchmark compiled from 11 open 3D cell-segmentation datasets for a review | Compilation; check original sources and licences (list is on the project GitLab README, not read) |
+| [Zenodo 12859553](https://zenodo.org/records/12859553) (Chen, Murphy; CC-BY-4.0; 11.5 GB) | Segmentation masks from the 3DCellComposer pipeline (tissue 3D images) | Masks are method outputs (record description is one line); tissue type and whether source images are included not stated. Not confirmed |
+| [S-BIAD3593](https://www.ebi.ac.uk/biostudies/studies/S-BIAD3593) (CC BY 4.0; 2026-08-09) | Whole mouse ovary light-sheet, AI segmentation of ~85,000 oocytes | Same study as the ovarian reserve lead below; the mask files were not looked at. Oocytes only |
+| [Zenodo 21068247](https://zenodo.org/records/21068247) (Giardini, Palandri et al.; CC-BY-4.0) | Whole mouse hearts, dual-mesoSPIM, 6 um isotropic tomograms | Not cellular resolution for the tomograms; other components (4 listed) were not read |
+| Zenodo [22639669](https://zenodo.org/records/22639669) (DARE3d-v2) | 3D time-lapse cell-division detection data (10 GB) | Division events, not cell instance labels as far as the description says |
+| Europe PMC 42781859, "Cellular basis of accelerated whole-tooth regeneration" (2026-09-24) | New tooth paper | Abstract/deposit not checked; not confirmed mouse developmental imaging |
+
+Resolved: the *Multiscale light-sheet organoid imaging framework* lead (Zenodo 6828906) now has an instance-labelled example movie, Zenodo 22078388 (README Section A). The 6828906 record itself still does not state that masks are included.
+
+Rejected today: Zenodo 23090918 (Microcount glial images; 2D brightfield/widefield), Zenodo 22799027 and 22069319 (by title: warehouse objects, whole rapeseed plants; not cellular), S-BIAD3191 (organoid phenotyping platform; no segmentation masks stated), S-BIAD3547 (Bo-Net bone stromal cell segmentation; title only, record not opened, so 2D/3D unknown).
 
 ## Raw confocal / light-sheet with labelled cells, to segment yourself (2026-10-06)
 
