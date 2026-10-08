@@ -69,6 +69,11 @@ Unverified and borderline leads are in [CANDIDATES.md](CANDIDATES.md). Entries m
 | BioImage Archive, Volume EM gallery | https://beta.bioimagearchive.org/bioimage-archive/galleries/volumeem | Listing reviewed | 2026-10-06 |
 | BioStudies S-BSST3135 | https://www.ebi.ac.uk/biostudies/studies/S-BSST3135 | Reviewed | 2026-10-06 |
 | bioimage.io datasets | https://bioimage.io/#/datasets | Reviewed (46 datasets in the public collection index) | 2026-10-06 |
+| BioStudies / BioImages, newest-first search "3D AND (segmentation OR labels OR masks)" (147 hits; 25 newest read, 4 records opened via API) | https://www.ebi.ac.uk/biostudies/api/v1/BioImages/search | Reviewed; nothing qualifying for Section A | 2026-10-08 |
+| Zenodo REST, newest-first: segmentation + 3D/confocal/light-sheet (788 hits, 25 newest), organoid/embryo/model organism, tooth, nuclei ground truth | https://zenodo.org/api/records | Reviewed; 1 record opened (23201343), see CANDIDATES.md | 2026-10-08 |
+| Europe PMC, mouse tooth/molar/incisor, first published 2026-09-30 to 2026-10-08 (71 hits, titles screened) | https://europepmc.org | No tooth-development or tooth-imaging paper | 2026-10-08 |
+| IDR project list (147 projects; newest ids idr0156 to idr0173 scanned by name) | https://idr.openmicroscopy.org/api/v0/m/projects/ | idr0159 opened (description only); others not opened | 2026-10-08 |
+| RIKEN SSBD database front page | https://ssbd.riken.jp/database/ | Front page shows 281 database projects (the log of 2026-10-06 said 280); the new project was not identified | 2026-10-08 |
 | Zenodo | https://zenodo.org | REST API, newest-first segmentation / 3D / organoid / tooth queries (2026-10-07); more needed | 2026-10-07 |
 | IDR | https://idr.openmicroscopy.org | Title searches ("segmentation", "3D", "instance") reviewed; more needed | 2026-10-06 |
 | Cell Tracking Challenge | https://celltrackingchallenge.net | 3D+time datasets and annotation policy reviewed | 2026-10-06 |
@@ -101,6 +106,7 @@ Open a pull request or issue with a new row, filling in as many fields as possib
 
 | Date | Change |
 |---|---|
+| 2026-10-08 | No new qualifying datasets found; nothing added to Section A or B. Three new leads and one unopened-IDR lead recorded in CANDIDATES.md. Sources: Zenodo REST (newest-first), BioStudies BioImages search, Europe PMC (tooth), IDR project list, SSBD front page. No new mouse tooth imaging data. WebFetch was blocked for Zenodo and BioStudies, so the browser was used. Figshare, Dryad, OpenOrganelle, EMPIAR, BBBC, Hugging Face not searched this run. |
 | 2026-10-07 | Added 4 verified entries to Section A: S-BIAD3120, Zenodo 22078388, S-BIAD3263, Zenodo 19795530. No new qualifying tooth datasets (Europe PMC / Zenodo checked). Sources: Zenodo REST (newest-first), BioStudies BioImages search, Europe PMC. IDR, SSBD, Figshare, Dryad not re-searched this run. |
 | 2026-10-06 | README structure created. Added 9 verified datasets/collections (Section A), 2 raw-only entries (Section B). Candidates tracked in CANDIDATES.md. |
 

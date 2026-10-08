@@ -2,7 +2,20 @@
 
 Leads for 3D, cell-resolution datasets with per-cell instance segmentation that are **not yet confirmed** (labels not located, nuclei/neurite-only, derived data, or only seen in a catalogue). When verified, move the entry to [README.md](README.md); if rejected, move it to the rejected list below with the reason.
 
-Last updated: 2026-10-07.
+Last updated: 2026-10-08.
+
+## Daily run 2026-10-08: new leads (record pages / API descriptions read, nothing downloaded)
+
+| Record | What it is | Verdict |
+|---|---|---|
+| [Zenodo 23201343](https://zenodo.org/records/23201343) (Chu, Chen, Kuo; CC-BY-4.0; 2026-10-07; cFOS.tar 384 MB, Lectin.tar 892 MB, TH.tar 4.07 GB) | Three mouse-brain fluorescence datasets (Lectin vessels, c-Fos neurons, tyrosine hydroxylase neurons) with \"segmentation annotations\", from the FIDELITY study (Lin et al.), for the 3D-GUSL paper (\"A Lightweight Learning Framework for Multi-Biomarker Mouse Brain Lightsheet Microscopy Segmentation\") | Not confirmed. Record does not say whether annotations are per-cell instances or semantic masks, nor voxel size. Tar contents not opened. Neuron markers only (not all cells) |
+| [S-BIAD3895](https://www.ebi.ac.uk/biostudies/studies/S-BIAD3895) (DelGiorno, Vanderbilt; CC BY 4.0; 2026-08-08) | Unpublished serial-section 3D EM volume of mouse pancreas with tuft cells and acinar-to-ductal metaplasia, as an arivis Vision4D scene (.vsv) plus six segmentation layers (.vsseg): full segmentation, second tuft cell, ADM nuclei, ADM nuclei plus tuft cell, tuft-cell actin rootlets (single label and individually labelled) | Not confirmed for Section A. Segmentation covers selected cells and structures, not stated as every cell, and is in a proprietary arivis format. File sizes not read |
+| [S-BIAD3591](https://www.ebi.ac.uk/biostudies/studies/S-BIAD3591) (CC0; 2026-06-26; MACH3Cancer, French) | Multi-site dual-view oblique plane (light-sheet) imaging of melanoma spheroids with ERK-KTR reporter; each site component includes fused TIFF volumes and \"derived segmentation outputs\"; keywords include nuclear segmentation and single-cell analysis | Not confirmed. Segmentation file type (label images or tables) and size not checked. Nuclei at best. This study was first released 2026-06-26, so it was missed by earlier newest-first reads |
+| [IDR idr0159](https://idr.openmicroscopy.org) (Tribolium castaneum embryo, \"Non-invasive long-term fluorescence live imaging\") | Fluorescence live imaging of a *Tribolium* embryo; only the project name and a two-line description were read | Possible Section B (raw light-sheet). Image dimensions, licence and cell label channel not checked; no segmentation mentioned |
+
+Not opened (title only, from the BioStudies newest-first list; none looks like a cell-segmentation resource): S-BIAD3383 (Giardia organelle proteins), S-BIAD3989, S-BIAD3794, S-BIAD3379, S-BIAD3928, S-BIAD3429, S-BIAD3803, S-BIAD4000, S-BIAD3885, S-BIAD3802, S-BIAD3228, S-BIAD3788, S-BIAD3750.
+
+Rejected today: S-BIAD3778 (L929 spheroid osmotic response; description is about volume changes, no segmentation stated), S-BIAD2441 (3D human lung development light-sheet, processed data, CC BY-NC 4.0; no cell labels stated; organ-scale, not opened further), Zenodo 23135747 (fungal filament bright-field), Zenodo 23089214 (Reticulon mitosis data, 31 MB, not 3D segmentation), Europe PMC tooth hits 2026-09-30 to 2026-10-08 (periodontal, orthodontic, clinical; no developmental imaging deposit).
 
 ## Daily run 2026-10-07: leads from Zenodo and BioStudies (record pages / API descriptions read, nothing downloaded)
 
